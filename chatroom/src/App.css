@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei");
 html, body {
   background-image:url("http://pavbca.com/walldb/original/0/8/0/6246.jpg");
-  background-size: cover;
-  background-repeat: none;
-  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
   font-family: 'ZCOOL XiaoWei', serif;
-  margin: 0px auto;
-  width: 90%;
+  
+
 }
 ::selection{
 
@@ -383,7 +385,7 @@ textarea:focus {
   display: block;
   top: 0px;
   right: 10%;
-  width: 200px;
+  width: 15%;
   height: 50px;
   border: none;
   outline: none;

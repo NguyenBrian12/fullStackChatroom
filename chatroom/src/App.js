@@ -33,7 +33,7 @@ class App extends Component {
   };
   constructor(props) {
     super(props);
-    this.socket = io("http://localhost:8080", { transports: ["websocket"] });
+    this.socket = io("/", { transports: ["websocket"] });
 
     this.socket.on("RECEIVE_MESSAGE", function(data) {
       newMessage(data);

@@ -23,10 +23,13 @@ db.connect(err => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api", routes);
-app.use(express.static("chatroom/build"));
-const path = require("path");
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "chatroom", "build", "index.html"));
+// app.use(express.static("chatroom/build"));
+// const path = require("path");
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "chatroom", "build", "index.html"));
+// });
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "app.js"));
 });
 var server = require("http").Server(app);
 var io = require("socket.io").listen(server);
