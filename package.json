@@ -1,0 +1,47 @@
+{
+  "name": "ignchat",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
+    "i": "^0.3.6",
+    "moment": "^2.24.0",
+    "mysql": "^2.16.0",
+    "node": "^10.15.3",
+    "npm": "^6.9.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "socket.io": "^2.2.0",
+    "tedious": "^5.0.3",
+    "tedious-connection-pool": "^1.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-lint": "eslint --ignore-pattern \"build\" --ignore-path .gitignore .",
+    "server": " node server.js",
+    "client": " set HTTPS=true&& cd chatroom && npm run start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Brian Nguyen",
+  "license": "ISC"
+}
