@@ -33,7 +33,9 @@ class App extends Component {
   };
   constructor(props) {
     super(props);
-    this.socket = io("/", { transports: ["websocket"] });
+    this.socket = io(window.location.host, {
+      transports: ["websocket"]
+    });
 
     this.socket.on("RECEIVE_MESSAGE", function(data) {
       newMessage(data);
