@@ -13,6 +13,13 @@ IGN Code Foo full stack chatroom app
 
 	# install app's dependencies
 	$ npm install
+	
+	# return to the server
+	$ cd ..
 
 	# start the project
 	$ npm run dev
+	
+	See the app here: http://ignchatroom.us-west-1.elasticbeanstalk.com/
+
+
