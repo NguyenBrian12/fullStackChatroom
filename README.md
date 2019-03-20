@@ -1,5 +1,8 @@
 # ignCodeFooFullStackChatroom
 IGN Code Foo full stack chatroom app
+
+See the app here: http://ignchatroom.us-west-1.elasticbeanstalk.com/
+
 # Installation
 
 	# clone the repo
@@ -20,6 +23,6 @@ IGN Code Foo full stack chatroom app
 	# start the project
 	$ npm run dev
 	
-	See the app here: http://ignchatroom.us-west-1.elasticbeanstalk.com/
+	
 
 
