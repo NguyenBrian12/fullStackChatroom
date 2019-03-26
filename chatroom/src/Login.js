@@ -24,7 +24,7 @@ class Login extends Component {
           <form>
             <div>
               <img
-                src="https://www.mcvuk.com/.image/t_share/MTUzMDY4NzA2MTQ3MzQ2MDQw/ignjpg.jpg"
+                src="https://i.imgur.com/36BdWxP.jpg"
                 alt="ign logo"
                 height="70"
                 width="150"
