@@ -26,7 +26,9 @@ app.use("/api", routes);
 app.use(express.static("chatroom/build"));
 const path = require("path");
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "chatroom", "build", "index.html"));
+  res.sendFile(
+    path.resolve(__dirname, "..", "chatroom", "build", "index.html")
+  );
 });
 // app.get("/", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "app.js"));
