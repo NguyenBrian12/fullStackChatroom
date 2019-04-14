@@ -28,9 +28,9 @@ const path = require("path");
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "chatroom", "build", "index.html"));
 });
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "app.js"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "app.js"));
+// });
 var server = require("http").Server(app);
 var io = require("socket.io").listen(server);
 users = [];
