@@ -23,7 +23,7 @@ db.connect(err => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api", routes);
-app.use(express.static("chatroom/build/index.html"));
+app.use(express.static("chatroom/build"));
 const path = require("path");
 app.get("*", (req, res) => {
   res.sendFile(
