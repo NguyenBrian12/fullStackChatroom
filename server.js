@@ -26,7 +26,7 @@ app.use("/api", routes);
 const path = require("path");
 
 app.get("*", (request, response) => {
-  response.sendFile(path.join(__dirname, "chatroom/build", "index.html"));
+  response.sendFile(path.join(__dirname, "..", "chatroom/build", "index.html"));
 });
 // app.get("/", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "app.js"));
