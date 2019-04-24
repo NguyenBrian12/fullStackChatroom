@@ -1,7 +1,7 @@
 # ignCodeFooFullStackChatroom
 IGN Code Foo full stack chatroom app
 
-See the app here: [link](http://ignchatroom.us-west-1.elasticbeanstalk.com/)
+See the app here: [link](https://ignchat.herokuapp.com/)
 
 # Installation
 
