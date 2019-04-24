@@ -6,7 +6,7 @@ See the app here: [link](https://ignchat.herokuapp.com/)
 # Installation
 
 	# clone the repo
-	$ git clone https://github.com/NguyenBrian12/ignCodeFooFullStackChatroom.git
+	$ git clone https://github.com/NguyenBrian12/fullStackChatroom.git
 
 	# install node's dependencies 
 	$ npm install
