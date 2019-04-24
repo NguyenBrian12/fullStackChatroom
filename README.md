@@ -1,5 +1,5 @@
-# ignCodeFooFullStackChatroom
-IGN Code Foo full stack chatroom app
+# fullStackChatroom
+full stack chatroom app created for IGN Code Foo 2019
 
 See the app here: [link](https://ignchat.herokuapp.com/)
 
