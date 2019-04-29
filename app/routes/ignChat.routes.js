@@ -1,11 +1,13 @@
 const mysql = require("mysql");
 const toCamel = require("./toCamel.js");
+const dotenv = require("dotenv");
+dotenv.config();
 const db = mysql.createConnection({
-  host: "chatapp.cfcexvxysb4w.us-west-1.rds.amazonaws.com",
-  user: "nguyenbrian12",
-  password: "briannn1",
-  database: "nguyenbrian12",
-  port: 3306
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
+  port: process.env.DB_PORT
 });
 const ValidateBody = require("../filters/validate.body");
 const IgnChat = require("../models/ignChat");
